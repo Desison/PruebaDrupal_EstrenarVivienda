@@ -1,0 +1,7 @@
+name: 'API REST personalizada'
+type: module
+core_version_requirement: ^8 || ^9
+description: 'Modulo para exposición de API'
+version: 1
+package: 'Modulo presonalizado'
+

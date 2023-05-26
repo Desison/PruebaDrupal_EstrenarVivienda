@@ -1,0 +1,52 @@
+<?php
+
+/**
+*@file
+*Pasos para instalacion
+*/
+
+function apicustom_install(){
+
+}
+
+
+function apicustom_schema(){
+
+  $schema['coches'] = [
+    'description' => 'tabla de para api',
+    'fields' => [
+      'nid' => array(
+        'description' => 'The primary identifier for a node.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'modelo' => array(
+        'description' => 'Modelo del Coche',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'color' => array(
+        'description' => 'color',
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'placa' => array(
+        'description' => 'placa del coche',
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+
+     ],
+     'primary key' => array(
+      'nid',
+    ),
+  ];
+return $schema;
+}

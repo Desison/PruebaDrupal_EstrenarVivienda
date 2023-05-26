@@ -1,0 +1,5 @@
+name: Api Custom
+type: module
+description: 'REsful para una tabla coches'
+package: 'ApiCustom'
+core_version_requirement: ^8.8.0 || ^9.0

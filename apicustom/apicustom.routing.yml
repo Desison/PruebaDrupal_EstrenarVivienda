@@ -1,0 +1,27 @@
+ctest_api.get:
+  path: 'example-crud/data'
+  defaults: { _controller: '\Drupal\apicustom\Controller\ApiCustomController::get_api' }
+  methods:  [GET]
+  requirements:
+    _access: 'TRUE'
+
+test_api.put:
+  path: 'example-crud/data'
+  defaults: { _controller: '\Drupal\apicustom\Controller\ApiCustomController::put_api' }
+  methods:  [PUT]
+  requirements:
+    _access: 'TRUE'
+
+test_api.post:
+  path: 'example-crud/data'
+  defaults: { _controller: '\Drupal\apicustom\Controller\ApiCustomController::post_api' }
+  methods:  [POST]
+  requirements:
+    _access: 'TRUE'
+
+test_api.delete:
+  path: 'example-crud/data'
+  defaults: { _controller: '\Drupal\apicustom\Controller\ApiCustomController::delete_api' }
+  methods:  [DELETE]
+  requirements:
+    _access: 'TRUE'
